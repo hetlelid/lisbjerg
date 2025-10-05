@@ -1,6 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple App</title>
+
+  <!-- Tell the browser it's a PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2196f3">
+</head>
+<body>
+
 Thomas Windings Gade 40<br>
 <br>
 Public transortation to:<br>
 <a href="https://beta.rejseplanen.dk/en#!S|Thomas%20Windings%20Gade%2040!Z|Århus%20H!start|1">Århus H</a><br>
 <a href="https://beta.rejseplanen.dk/en#!S|Thomas%20Windings%20Gade%2040!Z|Lystrup!start|1">Lystrup</a><br>
 <a href="https://beta.rejseplanen.dk/en#!S|Thomas%20Windings%20Gade%2040">Other</a><br>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
